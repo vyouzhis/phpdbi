@@ -44,7 +44,7 @@ $routeMap = array(
 		'module'=>'guy'), /* 合作商 首页*/
 	
 	array('method'=>'GET|POST',  
-		'uri'=>'/analysis/[public|business:switch]', 
+		'uri'=>'/analysis/[public|business:switch]/[i:p]?', 
 		'params'=>'home#index', 
 		'module'=>'pubdata'), /* 公共数据分析 首页*/
 
