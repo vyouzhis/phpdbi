@@ -1,0 +1,135 @@
+<!-- Wrapper -->
+    <div class="wrapper">
+
+      <!-- Topic Header -->
+      <div class="topic">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3><?php echo $this->_Lang(); ?></h3>
+            </div>
+            <div class="col-sm-8">
+              <ol class="breadcrumb pull-right hidden-xs">
+                <li><a href="index.html">首页</a></li>
+                <li class="active"><?php echo strtoupper($name); ?></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="title-lg first-child"><span><?php echo strtoupper($name); ?></span></h1>
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-sm-4 col-lg-3">
+            
+            <h3 class="title-block first-child">Quick Search</h3>
+            <form role="form">
+              <label for="search" class="sr-only">Search</label>
+              <input type="search" class="form-control" id="search" placeholder="Search here...">
+            </form>
+            
+            <h3 class="title-block">数据走势图</h3>
+            <div class="menu-lg">
+              <div class="item">
+                <i class="fa fa-university"></i>
+                <div class="content">
+                  <div class="title"><a href="/analysis/public"><span class="text-red">公共</span>数据</a></div>
+                  <div class="description">
+                    	定时发布一些公共数据走势图。
+                  </div>
+                </div>
+              </div>
+              
+              <div class="item">
+                <i class="fa fa-legal"></i>
+                <div class="content">
+                  <div class="title"><a href="/analysis/business"><span class="text-red">商业</span>数据</a></div>
+                  <div class="description">
+                    	定时发布一些商业数据走势图。
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-8 col-lg-9">
+           <h3 class="title-block second-child">采购经理指数 (Purchasing Managers’Index，简称PMI)</h3>
+            
+            <div class="portfolio-slideshow">
+              <!-- Image Carousel -->
+              <div id="portfolio-slideshow" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#portfolio-slideshow" data-slide-to="0" class="active"></li>
+                  <li data-target="#portfolio-slideshow" data-slide-to="1"></li>
+               
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="/data/uploadfile/1443174024.png" class="img-responsive" alt="...">
+                    <div class="carousel-caption">
+                      <h3><i class="fa fa-info-circle"></i> 制造业采购经理指数</h3>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/data/uploadfile/1443174030.png" class="img-responsive" alt="...">
+                    <div class="carousel-caption">
+                      <h3><i class="fa fa-info-circle"></i> 新订单指数</h3>
+                    </div>
+                  </div>
+                  
+                </div>
+                <!-- Controls -->
+                <a class="carousel-arrow carousel-arrow-prev" href="portfolio-item.html#portfolio-slideshow" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="carousel-arrow carousel-arrow-next" href="portfolio-item.html#portfolio-slideshow" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          
+            <p>是国际上通行的宏观经济监测指标体系之一，对国家经济活动的监测和预测具有重要作用。PMI涵盖着生产与流通、制造业与非制造业等领域，分为制造业PMI、服务业PMI，也有一些国家建立了建筑业PMI。制造业PMI指数在50%以上，反映制造业总体扩张；低于50%，通常反映制造业衰退。</p>
+            <br />
+            <h1 class="title-block first-child">数据信息</h1>
+            <table class="table">
+              <tbody>
+              	 <tr>	
+                  <td>数据来源:</td>
+                  <td>国家数据中心</td>
+                </tr>
+                <tr>
+                  <td>更新时间:</td>
+                  <td>2015-09-28</td>
+                </tr>                
+                <tr>
+                  <td>算法:</td>
+                  <td>移动平均(SMA)</td>
+                </tr>
+              </tbody>
+            </table>
+          
+            
+                      
+            <!-- Paggination -->
+            <ul class="pagination pagination-default pull-left">
+              <li class="disabled"><a href="help-center.html#">&laquo;</a></li>
+              <li class="active"><a href="help-center.html#">1 <span class="sr-only">(current)</span></a></li>
+              <li><a href="help-center.html#">2</a></li>
+              <li><a href="help-center.html#">3</a></li>
+              <li><a href="help-center.html#">4</a></li>
+              <li><a href="help-center.html#">5</a></li>
+              <li><a href="help-center.html#">&raquo;</a></li>
+            </ul>
+            <div class="clearfix"></div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </div> <!-- / .wrapper -->

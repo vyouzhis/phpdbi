@@ -1,0 +1,69 @@
+<!-- Wrapper -->
+    <div class="wrapper">
+
+      <!-- Topic Header -->
+      <div class="topic">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3><?php echo $this->_Lang(); ?></h3>
+            </div>
+            <div class="col-sm-8">
+              <ol class="breadcrumb pull-right hidden-xs">
+                <li><a href="/">首页</a></li>
+                <li><a href="#"><?php echo $article['title'];  ?></a></li>
+                
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+            <!-- Blog Post -->
+            <div class="blog">
+              <img src="<?php echo WEB_IMG;?>/logo_52x52.png" alt="...">
+              <div class="blog-desc">
+                <h3 class="blog-title">
+                  <a href="#"><?php echo $article['title'];  ?></a>
+                </h3>
+                <hr>
+                <p class="text-muted">by <?php echo $article['auth']; ?> on <?php echo date('Y-m-d',$article['ctime']); ?></p>
+                <p>
+                  <?php echo $article['contents']; ?>
+                </p>
+                
+              </div>
+            </div>                       
+          </div>
+          <div class="col-sm-3">
+          
+            <!-- Categories -->
+            <h1 class="title-block second-child">分类</h1>
+            <ul class="categories margin-bottom-30">
+              <li class=" <?php if($name == 'bi')echo 'active'; ?>"><a href="/blog/bi">BI</a></li>
+              <li class=" <?php if($name == 'crm')echo 'active'; ?>"><a href="/blog/crm">CRM</a></li>
+              
+            </ul>
+            
+            <!-- Top authors -->
+            <h1 class="title-block second-child">随便看看</h1>
+            <div class="top-stories">
+              <?php if(count($click))foreach($click as $k=>$v){ ?>
+              <div class="item">
+                <img src="<?php echo WEB_IMG;?>/gravatar.png" alt="...">
+                <div class="text">
+                  <h3><a href="/articles/<?php echo $v['id']; ?>.html"><?php echo $v['title']; ?></a></h3>
+                  by <?php echo $v['auth']; ?>
+                </div>
+              </div>
+              <?php } ?>
+              
+            </div>
+                                   
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </div> <!-- / .wrapper -->
